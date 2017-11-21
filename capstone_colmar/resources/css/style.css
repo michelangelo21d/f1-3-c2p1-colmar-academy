@@ -1,0 +1,620 @@
+/* Universal Declarations */
+@font-face {
+  font-family: 'Hammersmith One'; src: url(../fonts/HammersmithOne-Regular.ttf) format('truetype');
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Hammersmith One', helvetica, sans-serif;
+}
+
+body, header .content {
+  max-width: 80rem;
+  margin:auto;
+}
+
+/* Header */
+header .content {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .content .logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  margin-right: auto;
+}
+
+header .content .logo img {
+  height: 3rem;
+}
+
+header .content .logo span {
+  font-size: 1.7rem;
+}
+
+header .content .logo #textAcademy {
+  color: gray;
+  margin-left: 0.15rem;
+}
+
+header .content .desktop ul {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+header .content .desktop ul a {
+  text-decoration: none;
+  color: black;
+}
+
+header .content .desktop ul a:hover {
+  background-color: gray;
+  color: white;
+}
+
+header .content .mobile {
+  display: none;
+}
+
+header .content .desktop .color {
+  border-right: 1rem solid white;
+  height: 4rem;
+  padding-right: 0.5rem;
+}
+
+/* Body */
+
+.main {
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  line-height: 1.6;
+  z-index:1;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  width: 100%;
+  background-color: lightgrey;
+  align-items: center;
+  align-content: center;
+  line-height: 1.4;
+}
+
+.banner .leftColumn{
+  width: 60%;
+}
+
+.banner .leftColumn img {
+  width: 100%;
+  height: auto;
+}
+
+.banner #leftColumnContent {
+  display: block;
+  max-width: 100%;
+  margin: 2rem 1.5rem;
+}
+
+.banner .rightColumn {
+  width: 40%
+  display: flex;
+  color: #313335
+}
+
+.banner .rightColumn h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.banner .rightColumn h2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+
+.banner .rightColumn .button {
+  background-color: DimGray;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.6s linear 0.4s;
+}
+
+.banner .rightColumn .button:hover {
+  background-color: darkblue;
+}
+
+/* news */
+
+.news {
+  display: flex;
+  width: 100%;
+}
+
+.news .leftColumn{
+  display: flex;
+  width: 60%;
+}
+
+.news .leftColumn img {
+  width: 100%;
+  height: auto;
+}
+
+.news #leftColumnText {
+  display: block;
+  max-width: 100%;
+  margin: 2rem 1.5rem 0 1.5rem;
+}
+
+.news #leftColumnText h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0 1.5rem 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 2.7rem;
+  color: DimGrey;
+}
+
+.news #leftColumnText h3 {
+  font-size: 1.25rem;
+  color: gray;
+}
+
+.news #leftColumnText p {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.news .rightColumn {
+  border-left: 1px solid Gainsboro;
+  width: 40%;
+  color: dimgray;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.news .rightColumn h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: dimgray;
+}
+
+.news .rightColumn h3 {
+  font-size: 0.9rem;
+  margin-bottom:  0.5rem;
+  margin-top:  0.5rem;
+  color:  black;
+}
+
+.news .rightColumn a {
+  font-size: 0.9rem;
+  color: MediumSlateBlue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news .rightColumn a:hover {
+  text-decoration: underline;
+}
+
+
+.news .rightColumn img {
+  padding: 1rem;
+}
+
+.news .rightColumn .rowImage {
+  display: block;
+  margin: 1rem;
+  width: 35%;
+}
+
+.news .rightColumn .rowImage img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#imgMobile {
+  display: none;
+}
+
+.news .rightColumn .rowtext {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.rightColumnRow1, .rightColumnRow2, .rightColumnRow3 {
+  display: flex;
+  align-items: center;
+}
+
+ .rightColumnRow3 {
+  background-color: Gainsboro;
+}
+
+/* startLearning */
+
+.startLearning {
+  background-color: lightgrey;
+  padding: 0;
+}
+
+.startLearning h1 {
+  padding: 2rem 0;
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: darkslategray;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  left: 4rem;
+  right: 4rem;
+}
+
+.item {
+  background-color: white;
+  width: 28%;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-grow: 1;
+}
+
+.item h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 0;
+  line-height: 1.7rem;
+
+}
+
+.item h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  font-weight: 50;
+}
+
+.courses {
+  margin: 1rem 1rem;
+}
+
+/* Thesis */
+
+.flex {
+    display: flex;
+}
+
+.headline {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.thesis h2 {
+    font-size: 2.5rem;
+    color: darkslategray;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.left-section {
+    width: 60%;
+    padding: 0rem 1.5rem;
+}
+
+.mobileVid {
+  display: none;
+}
+
+.left-section video {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.right-section {
+    width: 40%;
+}
+
+.thesis .item1 {
+    background-color: Gainsboro;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thesis .box img {
+    width: 100%;
+    flex-grow: 1;
+}
+
+h4 {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.right-section .content {
+    padding: 1rem 1rem;
+    width: 100%;
+
+}
+
+.thesis p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+/* footer */
+
+footer {
+    border-top: 1px solid Gainsboro;
+    height: 5rem;
+}
+
+footer .container {
+    max-width: 1280px;
+    margin-top: 1rem;
+    display: block;
+    align-items: center;
+    color: gray;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+footer p {
+  display: inline-flex;
+  margin-left: 1.5rem;
+  margin-right: auto;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  margin-right: 1.25rem;
+  justify-content: flex-end;
+}
+
+.footer-nav a {
+    display: inline-block;
+    padding-right: 16px;
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+#mobileLearning {
+  display: none;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  header .content .logo {
+    display: none
+}
+
+.banner {
+  display: block;
+}
+
+.banner .leftColumn{
+  width: 100%;
+}
+
+.banner #leftColumnContent {
+  margin: 0;
+}
+
+.banner .rightColumn h1, h2 {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.banner .rightColumn .button {
+  padding: 0.5rem 0;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+header .content {
+  justify-content: space-between;
+}
+
+  header .content .logo {
+    margin-right: 1rem;
+  }
+
+  header .content .mobile {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .news .leftColumn{
+      display: none;
+    }
+
+    .news .rightColumn {
+      border: none;
+      width: 100%;
+    }
+
+    .news .rightColumn .rowImage {
+      margin: 0;
+      display: flex;
+      width: 90%;
+      height: auto;
+      flex-grow: 1;
+      margin: 1rem;
+    }
+
+    .news .rightColumn .rowtext {
+      display: block;
+      width: 100%;
+      margin: 1rem;
+    }
+
+    .rightColumnRow1, .rightColumnRow2, .rightColumnRow3 {
+      display: block;
+      align-items: center;
+    }
+
+    .startLearning .row {
+      display: hide;
+    }
+
+    #imgMobile {
+      display: flex;
+    }
+
+    #desktop {
+      display: none;
+    }
+
+    #desktopLearning {
+      display: none;
+    }
+
+    #mobileLearning {
+      display: block;
+    }
+
+    .startLearning {
+      background-color: white;
+    }
+
+    .startLearning h1 {
+      background-color: white;
+    }
+
+    .startLearning #mobileLearning {
+      margin: 0 1rem;
+      background-color: white;
+    }
+
+    .startLearning #mobileLearning ul a {
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    .startLearning #mobileLearning ul {
+      margin-bottom: 1.5rem;
+    }
+
+    .startLearning #mobileLearning ul li {
+      background-color: lightgrey;
+      color: dimgray;
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      padding: 1rem 0 1.5rem 1rem;
+      text-align: left;
+      margin: 0.5rem;
+    }
+
+    .flex {
+      display: none;
+    }
+
+    .headline {
+      padding: 0;
+      margin: 0;
+    }
+
+    .thesis h2 {
+        font-size: 2.5rem;
+        color: darkslategray;
+        font-weight: bold;
+        line-height: 2.5rem;
+        padding: 0;
+        margin: 2rem 0 1rem 0;
+    }
+
+.mobileVid {
+display: block;
+
+}
+
+.mobileVid video {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  object-fit: contain;
+}
+
+.footer-nav a {
+    display: none;
+}
+
+footer .container {
+    font-weight: 100;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+}
